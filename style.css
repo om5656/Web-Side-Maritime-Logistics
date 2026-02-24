@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+section .overlay {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+section .homeText {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+#home {
+  background-image: url("ship1.gif"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#services {
+  background-image: url("original-080407f5c66c94fb7b12c8c284acaa52.gif"); /* ضع صورة services هنا */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#contact {
+  background-image: url("unnamed.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service {
+  background-color:black;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+ 
+  max-width: 400px;
+}
+
+footer {
+  margin-top: auto;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  background-color:black;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+  .service {
+    width: 90%;
+  }
+}
